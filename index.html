@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Modern Agriculture In Rwanda
+
+</title>
+
+<link
+rel="stylesheet"
+href="style.css">
+
+<link
+rel="icon"
+href="Image/logo.png">
+
+<link
+rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link
+rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+<div>
+
+<i class="fa-solid fa-location-dot"></i>
+
+Kigali, Rwanda
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-envelope"></i>
+
+info@modernagriculture.rw
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-phone"></i>
+
++250 726603060
+
+</div>
+
+</div>
+
+<!-- HEADER -->
+<header>
+
+<div class="logo">
+
+<img src="Image/logo.png" alt="Logo">
+
+<div>
+
+<h2>Modern Agriculture</h2>
+
+<p>In Rwanda</p>
+
+</div>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#shop">Shop</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#request">Request</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="header-icons">
+
+<input
+type="search"
+id="search"
+placeholder="Search products...">
+
+<i class="fa-solid fa-heart"></i>
+
+<div style="position:relative;cursor:pointer;" onclick="openCart()">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cartCount"
+style="
+position:absolute;
+top:-8px;
+right:-8px;
+background:red;
+color:white;
+width:20px;
+height:20px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:12px;
+font-weight:bold;
+">
+
+0
+
+</span>
+
+</div>
+<div class="user-area">
+
+<button class="login-btn" onclick="openLogin()">
+
+<i class="fa-solid fa-user"></i>
+
+Login
+
+</button>
+
+</div>
+<div>
+<div class="menu-toggle">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+Welcome to
+<span>Modern Agriculture</span>
+In Rwanda
+</h1>
+
+<p>
+Buy fresh agricultural products directly from farmers in Rwanda.
+We connect farmers with local and international buyers through a
+modern online marketplace.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#shop" class="btn">
+Shop Now
+</a>
+
+<a href="#about" class="btn2">
+Learn More
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="Image/hero.png" alt="Modern Agriculture">
+
+</div>
+
+</section>
+<!-- FEATURES -->
+
+<section class="features">
+
+<div class="feature">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3>Fast Delivery</h3>
+
+<p>Fast delivery across Rwanda and beyond.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-seedling"></i>
+
+<h3>Fresh Products</h3>
+
+<p>Fresh products directly from trusted farmers.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-credit-card"></i>
+
+<h3>Secure Payment</h3>
+
+<p>Safe and secure payment methods.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>24/7 Support</h3>
+
+<p>Customer support whenever you need help.</p>
+
+</div>
+
+</section>
+<!-- CATEGORIES & PRODUCTS -->
+
+<section class="shop" id="shop">
+
+<div class="categories">
+
+<h2>Categories</h2>
+
+<ul>
+
+<li>🌽 Cereals</li>
+
+<li>🫘 Beans</li>
+
+<li>🥔 Tubers</li>
+
+<li>🍌 Fruits</li>
+
+<li>🥬 Vegetables</li>
+
+<li>☕ Coffee</li>
+
+<li>🍵 Tea</li>
+
+</ul>
+
+</div>
+
+<div class="products">
+
+<h2>Featured Products</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="Image/beans.png" alt="Beans">
+
+<h3>Red Beans</h3>
+
+<p>Fresh Beans from Rwanda</p>
+
+<div class="price">2,000 RWF / Kg</div>
+
+<button onclick="addToCart('Red Beans',2000)">
+Add To Cart
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="Image/maize.png" alt="Maize">
+
+<h3>Maize</h3>
+
+<p>High Quality Maize</p>
+
+<div class="price">1,500 RWF / Kg</div>
+
+<button onclick="addToCart('Maize',1500)">
+Add To Cart
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="Image/rice.png" alt="Rice">
+
+<h3>Rice</h3>
+
+<p>Premium Rice</p>
+
+<div class="price">3,000 RWF / Kg</div>
+
+<button onclick="addToCart('Rice',3000)">
+Add To Cart
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="Image/coffee.png" alt="Coffee">
+
+<h3>Coffee</h3>
+
+<p>Rwandan Premium Coffee</p>
+
+<div class="price">5,000 RWF</div>
+
+<button onclick="addToCart('Coffee',5000)">
+Add To Cart
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="Image/tea.png" alt="Tea">
+
+<h3>Tea</h3>
+
+<p>Natural Tea</p>
+
+<div class="price">4,000 RWF</div>
+
+<button onclick="addToCart('Tea',4000)">
+Add To Cart
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="Image/banana.png" alt="Banana">
+
+<h3>Bananas</h3>
+
+<p>Fresh Bananas</p>
+
+<div class="price">1,200 RWF</div>
+
+<button onclick="addToCart('Bananas',1200)">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="about" class="about">
+
+<div class="about-text">
+
+<h2>About Modern Agriculture In Rwanda</h2>
+
+<p>
+
+Modern Agriculture In Rwanda is an online platform that connects
+farmers with buyers inside and outside Rwanda.
+
+Our mission is to improve agriculture through technology and make
+buying agricultural products easier.
+
+</p>
+
+</div>
+
+<div class="about-image">
+
+<img src="Image/hero.png" alt="About">
+
+</div>
+
+</section>
+<!-- SERVICES -->
+
+<section class="services">
+
+<div class="service-box">
+
+<i class="fa-solid fa-handshake"></i>
+
+<h3>For Farmers</h3>
+
+<p>Sell your products to buyers worldwide.</p>
+
+</div>
+
+<div class="service-box">
+
+<i class="fa-solid fa-basket-shopping"></i>
+
+<h3>For Buyers</h3>
+
+<p>Buy fresh products directly from farmers.</p>
+
+</div>
+
+<div class="service-box">
+
+<i class="fa-solid fa-earth-africa"></i>
+
+<h3>Worldwide Shipping</h3>
+
+<p>We deliver to more than 50 countries.</p>
+
+</div>
+
+<div class="service-box">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Safe & Secure</h3>
+
+<p>Your payments are protected.</p>
+
+</div>
+
+</section>
+<!-- SHOPPING CART -->
+
+<!-- SHOPPING CART -->
+<div class="cart-icon" onclick="openCart()">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cartCount">0</span>
+
+</div>
+<div id="cartSidebar" class="cart-sidebar">
+
+<div class="cart-header">
+
+<h2>Shopping Cart</h2>
+
+<button onclick="closeCart()">✖</button>
+
+</div>
+
+<div id="cartItems">
+
+<p>Your cart is empty.</p>
+
+</div>
+
+<div class="cart-footer">
+
+<h3>Total:
+<span id="cartTotal">
+0 RWF
+</span>
+</h3>
+
+<button onclick="checkout()">
+Checkout
+</button>
+
+</div>
+
+</div>
+
+<!-- BUYER REQUEST -->
+
+<section id="request" class="request">
+
+<h2>Buyer Request Form</h2>
+
+<form id="requestForm">
+
+<input
+type="text"
+id="name"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Email"
+required>
+
+<input
+type="tel"
+id="phone"
+placeholder="Phone Number"
+required>
+
+<select id="product">
+
+<option>Beans</option>
+
+<option>Maize</option>
+
+<option>Rice</option>
+
+<option>Coffee</option>
+
+<option>Tea</option>
+
+<option>Bananas</option>
+
+</select>
+
+<input
+type="number"
+id="quantity"
+placeholder="Quantity (Kg)"
+required>
+
+<textarea
+id="message"
+placeholder="Write your message">
+</textarea>
+
+<button type="submit">
+
+Send Request
+
+</button>
+
+</form>
+
+</section>
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-container">
+
+<div>
+
+<h3>📍 Address</h3>
+
+<p>Kigali, Rwanda</p>
+
+</div>
+
+<div>
+
+<h3>📞 Phone</h3>
+
+<p>+250 726603060</p>
+
+</div>
+
+<div>
+
+<h3>✉ Email</h3>
+
+<p>info@modernagriculture.rw</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- GOOGLE MAP -->
+
+<section class="map">
+
+<iframe
+src="https://www.google.com/maps?q=Kigali,Rwanda&output=embed"
+allowfullscreen
+loading="lazy">
+
+</iframe>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+
+<h2>
+
+Modern Agriculture In Rwanda
+
+</h2>
+
+<p>
+
+Connecting Farmers With Buyers Worldwide.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#shop">Shop</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Follow Us</h3>
+
+<p>
+
+Facebook | Instagram | X | YouTube
+
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p style="text-align:center">
+
+© 2026 Modern Agriculture In Rwanda.
+
+</p>
+<button
+class="btn"
+onclick="adminLogin()">
+
+Admin
+
+</button>
+</footer>
+<!-- FLOATING WHATSAPP -->
+
+<a href="https://wa.me/250726603060"
+
+class="whatsapp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+<!-- LOGIN POPUP -->
+
+<div class="login-popup" id="loginPopup">
+
+<div class="popup-box">
+
+<span class="close" onclick="closeLogin()">&times;</span>
+
+<h2>User Login</h2>
+
+<form>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="password" placeholder="Password" required>
+
+<button type="submit">Login</button>
+
+<p>
+
+Don't have an account?
+
+<a href="#" onclick="openRegister()">
+
+Register
+
+</a>
+
+</p>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- REGISTER POPUP -->
+
+<div id="registerPopup" class="register-popup">
+
+<div class="popup-box">
+
+<span class="close" onclick="closeRegister()">&times;</span>
+
+<h2>Create Account</h2>
+
+<form id="registerForm">
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+placeholder="Email"
+required>
+
+<input
+type="tel"
+placeholder="Phone Number"
+required>
+
+<input
+type="password"
+placeholder="Password"
+required>
+
+<input
+type="password"
+placeholder="Confirm Password"
+required>
+
+<button type="submit">
+
+Register
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+<!-- ADMIN PANEL -->
+
+<div class="admin-panel" id="adminPanel">
+
+<div class="admin-header">
+
+<h2>
+
+Admin Dashboard
+
+</h2>
+
+<button onclick="logoutAdmin()">
+
+Logout
+
+</button>
+
+</div>
+
+<div class="dashboard-cards">
+
+<div class="dashboard-card">
+
+<h3>Total Products</h3>
+
+<h1 id="totalProducts">
+
+12
+
+</h1>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>Total Orders</h3>
+
+<h1 id="totalOrders">
+
+0
+
+</h1>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>Total Buyers</h3>
+
+<h1 id="totalBuyers">
+
+0
+
+</h1>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>Total Revenue</h3>
+
+<h1 id="totalRevenue">
+
+0 RWF
+
+</h1>
+
+</div>
+
+</div>
+
+<!-- ADD PRODUCT -->
+
+<section class="admin-section">
+
+<h2>
+
+Add New Product
+
+</h2>
+
+<form id="productForm">
+
+<input
+type="text"
+id="productName"
+placeholder="Product Name"
+required>
+
+<input
+type="number"
+id="productPrice"
+placeholder="Price"
+required>
+
+<input
+type="text"
+id="productImage"
+placeholder="Image URL or image filename">
+
+<textarea
+id="productDescription"
+placeholder="Description">
+
+</textarea>
+
+<button type="submit">
+
+Add Product
+
+</button>
+
+</form>
+
+</section>
+
+<!-- PRODUCTS TABLE -->
+
+<section class="admin-section">
+
+<h2>
+
+Manage Products
+
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Price</th>
+
+<th>Edit</th>
+
+<th>Delete</th>
+
+</tr>
+
+</thead>
+
+<tbody id="productTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+<!-- BUYER REQUESTS -->
+
+<section class="admin-section">
+
+<h2>
+
+Buyer Requests
+
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Country</th>
+
+<th>Product</th>
+
+<th>Quantity</th>
+
+<th>Delete</th>
+
+</tr>
+
+</thead>
+
+<tbody id="requestTable">
+
+</tbody>
+
+</table>
+
+</section>
+<div id="loginPopup" class="login-popup">
+
+<div class="popup-box">
+
+<span class="close" onclick="closeLogin()">&times;</span>
+
+<h2>Login</h2>
+
+<form id="loginForm">
+
+<input
+type="email"
+placeholder="Email"
+required>
+
+<input
+type="password"
+placeholder="Password"
+required>
+
+<button type="submit">
+
+Login
+
+</button>
+
+<p>
+
+Don't have an account?
+
+<a href="#" onclick="openRegister()">
+
+Register
+
+</a>
+
+</p>
+
+</form>
+
+</div>
+
+</div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

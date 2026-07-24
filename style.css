@@ -1,0 +1,1072 @@
+/* ===================================
+   MODERN AGRICULTURE IN RWANDA
+   STYLE.CSS VERSION 2 - PART 1
+=================================== */
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8faf8;
+color:#333;
+overflow-x:hidden;
+}
+
+/* LINKS */
+
+a{
+text-decoration:none;
+}
+
+ul{
+list-style:none;
+}
+
+/* TOP BAR */
+
+.topbar{
+background:#0f5132;
+color:#fff;
+padding:10px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+font-size:14px;
+}
+
+.topbar div{
+display:flex;
+align-items:center;
+gap:8px;
+margin:5px 0;
+}
+
+.topbar i{
+color:#22c55e;
+}
+
+/* HEADER */
+
+header{
+background:#ffffff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+/* LOGO */
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:65px;
+height:65px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid #22c55e;
+}
+
+.logo h2{
+color:#14532d;
+font-size:28px;
+font-weight:700;
+}
+
+.logo p{
+color:#16a34a;
+font-size:14px;
+}
+
+/* NAVIGATION */
+
+nav ul{
+display:flex;
+align-items:center;
+gap:25px;
+}
+
+nav ul li a{
+color:#14532d;
+font-weight:600;
+transition:.3s;
+position:relative;
+}
+
+nav ul li a:hover{
+color:#22c55e;
+}
+
+nav ul li a::after{
+content:'';
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:3px;
+background:#22c55e;
+transition:.3s;
+}
+
+nav ul li a:hover::after{
+width:100%;
+}
+
+/* HEADER ICONS */
+
+.header-icons{
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+.header-icons input{
+padding:12px;
+width:220px;
+border:1px solid #ddd;
+border-radius:30px;
+outline:none;
+}
+
+.header-icons i{
+font-size:22px;
+cursor:pointer;
+color:#14532d;
+transition:.3s;
+}
+
+.header-icons i:hover{
+color:#22c55e;
+transform:scale(1.1);
+}
+
+/* HERO */
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:80px 8%;
+background:linear-gradient(135deg,#ecfdf5,#dcfce7);
+gap:40px;
+}
+
+.hero-text h1{
+font-size:60px;
+color:#14532d;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero-text span{
+color:#22c55e;
+}
+
+.hero-text p{
+font-size:18px;
+color:#555;
+margin-bottom:35px;
+line-height:1.8;
+}
+
+/* HERO BUTTONS */
+
+.hero-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+background:#22c55e;
+color:#fff;
+padding:15px 35px;
+border-radius:40px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#15803d;
+transform:translateY(-4px);
+}
+
+.btn2{
+background:#fff;
+color:#14532d;
+padding:15px 35px;
+border-radius:40px;
+border:2px solid #22c55e;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn2:hover{
+background:#22c55e;
+color:#fff;
+}
+
+/* HERO IMAGE */
+
+.hero-image{
+text-align:center;
+}
+
+.hero-image img{
+width:100%;
+max-width:600px;
+border-radius:25px;
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+animation:float 4s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+/* ===================================
+   FEATURES
+=================================== */
+
+.features{
+padding:70px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+background:#ffffff;
+}
+
+.feature{
+background:#fff;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.feature:hover{
+transform:translateY(-10px);
+}
+
+.feature i{
+font-size:45px;
+color:#22c55e;
+margin-bottom:20px;
+}
+
+.feature h3{
+color:#14532d;
+margin-bottom:10px;
+}
+
+.feature p{
+color:#666;
+}
+
+/* ===================================
+   SHOP
+=================================== */
+
+.shop{
+display:grid;
+grid-template-columns:280px 1fr;
+gap:30px;
+padding:80px 8%;
+background:#f8faf8;
+}
+
+/* ===================================
+   CATEGORIES
+=================================== */
+
+.categories{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+height:fit-content;
+}
+
+.categories h2{
+color:#14532d;
+margin-bottom:25px;
+font-size:28px;
+}
+
+.categories ul li{
+padding:15px;
+margin-bottom:12px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+font-weight:600;
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.categories ul li:hover{
+background:#22c55e;
+color:#fff;
+}
+
+.categories ul li i{
+font-size:18px;
+}
+
+/* ===================================
+   PRODUCTS
+=================================== */
+
+.products h2{
+font-size:34px;
+color:#14532d;
+margin-bottom:30px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+/* ===================================
+   PRODUCT CARD
+=================================== */
+
+.product-card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+position:relative;
+}
+
+.product-card:hover{
+transform:translateY(-12px);
+}
+
+.product-card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.product-card h3{
+padding:20px 20px 10px;
+font-size:24px;
+color:#14532d;
+}
+
+.product-card p{
+padding:0 20px;
+color:#666;
+margin-bottom:15px;
+}
+
+.price{
+padding:0 20px;
+font-size:22px;
+font-weight:bold;
+color:#ea580c;
+margin-bottom:10px;
+}
+
+.rating{
+padding:0 20px;
+font-size:18px;
+color:#facc15;
+margin-bottom:20px;
+}
+
+.product-card button{
+margin:20px;
+width:calc(100% - 40px);
+padding:14px;
+border:none;
+border-radius:12px;
+background:#22c55e;
+color:white;
+font-size:17px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.product-card button:hover{
+background:#15803d;
+}
+
+/* ===================================
+   SALE BADGE
+=================================== */
+
+.product-card::before{
+content:"NEW";
+position:absolute;
+top:15px;
+left:15px;
+background:#ef4444;
+color:white;
+padding:6px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+}
+
+/* ===================================
+   PRODUCT IMAGE ZOOM
+=================================== */
+
+.product-card img{
+transition:.4s;
+}
+
+.product-card:hover img{
+transform:scale(1.08);
+}
+/* ===================================
+   SHOPPING CART SIDEBAR
+=================================== */
+
+.cart-sidebar{
+position:fixed;
+top:0;
+right:-420px;
+width:400px;
+height:100%;
+background:#fff;
+box-shadow:-5px 0 20px rgba(0,0,0,.2);
+z-index:9999;
+transition:.4s;
+display:flex;
+flex-direction:column;
+}
+
+.cart-sidebar.active{
+right:0;
+}
+
+.cart-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#14532d;
+color:#fff;
+}
+
+.cart-header h2{
+font-size:24px;
+}
+
+.cart-header i{
+font-size:25px;
+cursor:pointer;
+}
+
+#cartItems{
+flex:1;
+padding:20px;
+overflow-y:auto;
+}
+
+.cart-footer{
+padding:20px;
+border-top:1px solid #ddd;
+}
+
+.cart-footer h3{
+margin-bottom:15px;
+color:#14532d;
+}
+
+.cart-footer button{
+width:100%;
+padding:15px;
+border:none;
+background:#22c55e;
+color:#fff;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.cart-footer button:hover{
+background:#15803d;
+}
+
+/* ===================================
+   BUYER REQUEST FORM
+=================================== */
+
+.request{
+padding:80px 8%;
+background:#ecfdf5;
+}
+
+.request form{
+max-width:800px;
+margin:auto;
+background:#fff;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.request input,
+.request select,
+.request textarea{
+width:100%;
+padding:15px;
+margin-bottom:20px;
+border:1px solid #ccc;
+border-radius:10px;
+font-size:16px;
+outline:none;
+}
+
+.request textarea{
+height:150px;
+resize:none;
+}
+
+.request button{
+width:100%;
+padding:15px;
+background:#22c55e;
+border:none;
+color:#fff;
+font-size:18px;
+font-weight:bold;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.request button:hover{
+background:#15803d;
+}
+
+/* ===================================
+   CONTACT
+=================================== */
+
+.contact{
+padding:80px 8%;
+background:#fff;
+}
+
+.contact-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.contact-card{
+background:#f8faf8;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.contact-card:hover{
+transform:translateY(-10px);
+}
+
+.contact-card i{
+font-size:45px;
+color:#22c55e;
+margin-bottom:20px;
+}
+
+.contact-card h3{
+margin-bottom:10px;
+color:#14532d;
+}
+
+.contact-card p{
+color:#666;
+}
+
+/* ===================================
+   GOOGLE MAP
+=================================== */
+
+.map{
+padding:0;
+}
+
+.map iframe{
+width:100%;
+height:450px;
+border:none;
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+background:#14532d;
+color:#fff;
+padding:60px 8% 20px;
+}
+
+.footer-content{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+margin-bottom:30px;
+}
+
+.footer-content h2,
+.footer-content h3{
+margin-bottom:20px;
+}
+
+.footer-content p{
+line-height:1.8;
+}
+
+.footer-content ul li{
+margin-bottom:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.footer-content ul li:hover{
+color:#22c55e;
+}
+
+.footer-content i{
+font-size:28px;
+margin-right:15px;
+cursor:pointer;
+transition:.3s;
+}
+
+.footer-content i:hover{
+color:#22c55e;
+transform:scale(1.2);
+}
+
+footer hr{
+border:none;
+height:1px;
+background:#2d6a4f;
+margin:20px 0;
+}
+
+.copyright{
+text-align:center;
+font-size:15px;
+}
+
+/* ===================================
+   WHATSAPP BUTTON
+=================================== */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+background:#25D366;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+font-size:32px;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+z-index:999;
+transition:.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+/* ===================================
+   LOGIN & REGISTER POPUP
+=================================== */
+
+.login-popup,
+.register-popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.6);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.popup-box{
+background:#fff;
+width:90%;
+max-width:450px;
+padding:40px;
+border-radius:20px;
+position:relative;
+animation:popup .4s ease;
+}
+
+@keyframes popup{
+
+from{
+transform:scale(.8);
+opacity:0;
+}
+
+to{
+transform:scale(1);
+opacity:1;
+}
+
+}
+
+.close{
+position:absolute;
+right:20px;
+top:15px;
+font-size:30px;
+cursor:pointer;
+color:#14532d;
+}
+
+.popup-box h2{
+text-align:center;
+margin-bottom:25px;
+color:#14532d;
+}
+
+.popup-box input{
+width:100%;
+padding:15px;
+margin-bottom:20px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+font-size:16px;
+}
+
+.popup-box button{
+width:100%;
+padding:15px;
+background:#22c55e;
+color:#fff;
+border:none;
+border-radius:10px;
+font-size:17px;
+cursor:pointer;
+transition:.3s;
+}
+
+.popup-box button:hover{
+background:#15803d;
+}
+
+.popup-box p{
+margin-top:20px;
+text-align:center;
+}
+
+.popup-box a{
+color:#22c55e;
+font-weight:bold;
+}
+
+/* ===================================
+   ADMIN PANEL
+=================================== */
+
+.admin-panel{
+display:none;
+padding:40px;
+background:#f8faf8;
+min-height:100vh;
+}
+
+.admin-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:40px;
+}
+
+.admin-header h2{
+color:#14532d;
+font-size:32px;
+}
+
+.admin-header button{
+padding:12px 25px;
+background:#ef4444;
+color:#fff;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* DASHBOARD */
+
+.dashboard-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-bottom:40px;
+}
+
+.dashboard-card{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+text-align:center;
+transition:.3s;
+}
+
+.dashboard-card:hover{
+transform:translateY(-8px);
+}
+
+.dashboard-card h3{
+color:#666;
+margin-bottom:15px;
+}
+
+.dashboard-card h1{
+color:#22c55e;
+font-size:38px;
+}
+
+/* ADMIN SECTION */
+
+.admin-section{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+margin-bottom:40px;
+}
+
+.admin-section h2{
+color:#14532d;
+margin-bottom:25px;
+}
+
+.admin-section input,
+.admin-section textarea{
+width:100%;
+padding:15px;
+margin-bottom:20px;
+border:1px solid #ccc;
+border-radius:10px;
+font-size:16px;
+}
+
+.admin-section textarea{
+height:120px;
+resize:none;
+}
+
+.admin-section button{
+padding:14px 30px;
+background:#22c55e;
+color:#fff;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+.admin-section button:hover{
+background:#15803d;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+table th{
+background:#14532d;
+color:#fff;
+padding:15px;
+}
+
+table td{
+padding:15px;
+border-bottom:1px solid #ddd;
+text-align:center;
+}
+
+table tr:hover{
+background:#f1f5f9;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.shop{
+grid-template-columns:1fr;
+}
+
+.header-icons input{
+width:150px;
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+nav ul{
+flex-direction:column;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.dashboard-cards{
+grid-template-columns:1fr;
+}
+
+.footer-content{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+}
+
+@media(max-width:480px){
+
+.topbar{
+flex-direction:column;
+text-align:center;
+}
+
+.logo{
+flex-direction:column;
+text-align:center;
+}
+
+.header-icons{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.popup-box{
+padding:25px;
+}
+
+}
+.cart-icon{
+position:relative;
+cursor:pointer;
+}
+
+#cartCount{
+position:absolute;
+top:-10px;
+right:-10px;
+width:22px;
+height:22px;
+background:red;
+color:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:12px;
+font-weight:bold;
+}
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:white;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:99999;
+}
+
+.spinner{
+width:60px;
+height:60px;
+border:6px solid #ddd;
+border-top:6px solid #22c55e;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+100%{
+transform:rotate(360deg);
+}
+}
